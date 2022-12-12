@@ -1,0 +1,110 @@
+.navbar__Main{
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    color: white;
+    align-items: center;
+    padding: 1rem;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a{
+    margin: 1rem;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+    font-family: 'Roboto Condensed', Sans-Serif;}
+
+nav ul li a:hover{
+    color: gray;
+}
+
+.sign__In{
+    background-color: black;
+    color: white;
+    border: 0px solid;
+}
+
+
+.navbar__Small__Screen{
+    /* display: none; */
+}
+
+
+.navbar__Ham{
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    cursor: pointer;
+    /* background-color: red; */
+}
+
+.navbar__Buttons button{
+    margin-right: 30px;
+}
+
+.navbar__Small__Screen{
+    display: none;
+}
+
+
+
+.small__Screen__Navbar__Links{
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    background-color: black;
+    /* margin-top: 900px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* display: none; */
+    /* transition: 1s ease; */
+}
+
+
+
+.small__Screen__Navbar__Links nav ul {
+    flex-direction: column;
+    /* justify-content: space-evenly;     */
+    margin-top: 10px;
+}
+
+.small__Screen__Navbar__Links nav ul li {
+    margin-bottom: 20px;
+}
+
+.small__Screen__Navbar__Links nav ul li a{
+    font-family: 'Roboto Condensed', Sans-Serif;
+}
+
+@media only screen  and (max-width:700px){
+    .big__Screen__Navbar{
+        display: none;
+    }
+  
+   .navbar__Small__Screen{
+       display: block;
+   }
+
+    .navbar__Main{
+       height: 50px;
+   }  
+}
+
+@media screen and (max-width:420px){
+    .navbar__Buttons button{
+        display: none;
+    }
+}

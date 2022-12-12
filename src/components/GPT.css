@@ -1,0 +1,57 @@
+.gpt__Main{
+    display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: black;
+  color: white;
+}
+
+.gpt__Section1{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 80px;
+}
+
+.gpt__Section1 h1{
+    flex:1;
+}
+.gpt__Section1 p{
+    flex:1;
+}
+
+.gpt__Section2 h1{
+    flex:1;
+    width: 40%;
+
+}
+.gpt__Section2 p{
+    /* flex:1; */
+}
+
+.gpt__Section2{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 80px;
+    align-items: center;
+}
+
+.gpt__Section3{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(14rem,1fr));
+    gap:1.2rem
+}
+
+.gpt__Wrapper{
+    background-color: lightblue;
+    padding: 10px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.gpt__Section3 *{
+     margin-bottom: 14px;
+}
